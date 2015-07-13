@@ -19,19 +19,19 @@ main.get('/:sub', function(req, res){
 });
 */
 // Redirect app
-
+/*
 var redirect = express();
 
 redirect.use(function(req, res){
   if (!module.parent) console.log(req.vhost);
   res.redirect('http://doozer.tips:3000/' + req.vhost[0]);
 });
-
+*/
 // Vhost app
 
 var app = module.exports = express();
 
-app.use(vhost('*.doozer.tips', redirect)); // Serves all subdomains via Redirect app
+app.use(vhost('*.doozer.tips', main)); // Serves all subdomains via Redirect app
 app.use(vhost('doozer.tips', main)); // Serves top level domain via Main server app
 
 /* istanbul ignore next */
