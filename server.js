@@ -36,6 +36,6 @@ app.use(vhost('www.doozer.tips', main)); // Serves all subdomains via Redirect a
 
 /* istanbul ignore next */
 if (!module.parent) {
-  app.listen(3000);
-  console.log('Express started on port 3000');
+  app.listen(8080);
+  console.log('Express started on port 8080');
 }
