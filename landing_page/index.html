@@ -6,16 +6,48 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <title>Doozer | The to-do list with the tips you need to be a hero</title>
+    <meta name="keywords" content="tasks, to-do list, to-do, experts, Doozer, Doozer to-do list, Doozer experts, Doozer list, Doozer tips">
+	<meta name="description" content="The to-do list with tips from the experts.">
+    
+    <link rel="shortcut icon" href="img/favicon.png">
+	<!-- TODO: turn the above into an .ico with 16x16, 32x32, 48x48... AND add:
+		<link rel="icon" type="image/png" href="/path/to/icons/favicon-192x192.png" sizes="192x192">
+		<link rel="apple-touch-icon" sizes="180x180" href="/path/to/icons/apple-touch-icon-180x180.png">
+	-->
+    
+    <!-- TODO: fill in FB & Twitter properties-->
+    <!-- Facebook -->    
+    <meta property="og:site_name" content="Doozer">
+    <meta property="og:title" content="The tips you need to be a hero">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Doozer - The tips you need to be a hero">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image:src" content="">
+    <meta name="twitter:domain" content="">
+    <meta name="twitter:app:name:iphone" content="Doozer">
+    <meta name="twitter:app:id:iphone" content="">
+    <meta name="twitter:app:name:ipad" content="Doozer">
+    <meta name="twitter:app:id:ipad" content="">
 
-    <!-- Bootstrap Core CSS -->
+
+    <!-- Bootstrap Core CSS and plugins -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/owl.theme.css"> <!-- TODO: check if this is needed? does it conflict with custom?-->
 
     <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+    <!-- TODO: check nothing's needed from here and remove this <link href="css/landing-page.css" rel="stylesheet"> -->
+    <link href="css/style-library-1.css" rel="stylesheet">
+    <link href="css/header-3.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -31,211 +63,166 @@
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#">Doozer</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#services">Join</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-
-    <!-- Header -->
-    <a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Doozer</h1>
-                        <h3>The tips you need to be a hero</h3>
-                        <hr class="intro-divider">
-                        
-                    </div>
+    
+    <!-- HEADER 3 (bskit) -->
+	<header id="header-3">
+      <section class="hero">
+		  
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-1 col-sm-offset-4 clearfix">
+                    <img src="img/favicon.png" class="brand pull-right-sm center-block-xs img-responsive">
                 </div>
-            </div>
+                <div class="col-sm-3 clearfix">
+					<h1 class="brand-sm pull-left-sm text-center-xs">Doozer</h1>
+                </div>
+                <div class="col-xs-12 text-center-xs col-sm-6 col-sm-offset-4">
+					<p class="lead">The tips you need to be a hero</p>
+				</div>
+		 	</div><!-- /.row -->
+            <div class="row">
+                <form class="col-xs-10 col-xs-offset-1 text-center-xs col-sm-6 col-sm-offset-4 col-lg-4">
+                <div class="form-group">
+                    <label class="label" for="emailtop">Get notified when we launch in your area: </label>
+                	<div class="input-group">
+                		<input type="email" class="form-control" id="emailtop" placeholder="you@email.com">
+                		<span class="input-group-btn">
+                			<a class="btn btn-primary" type="button">send</a>
+                		</span>
+                	</div>
+                </div><!-- /.form-group -->
+                </form>
+            </div><!-- /.row -->
+		</div><!-- /.container -->
+		
+	  </section>
+    </header>
+    <!--// END HEADER 3 -->
 
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.intro-header -->
 
     <!-- Page Content -->
-
-	<a  name="services"></a>
-    <div class="content-section-a">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Vanquish chores, focus on what you love</h2>
-                    <p class="lead">No wonder you don't have enough time for relaxing with family and friends or creating your passion project. 
-                        You're juggling life's chores on top of your career &mdash; keeping up with all those house repairs, booking the kids' summer activities, 
-                        stocking the groceries, hiring a dog-walker, planning a trip, and choosing a new doctor. 
-                        <br/><br/>
-                        Rescue your time from researching life's nitty-gritty tasks. 
-                        Your team of Doozer experts uncovers answers for you, so you squash your to-do list with less effort. 
-                        You get to focus on the bigger picture and save your energy for what you love. 
-                        </p>
-                    <ul>
-                        <li>An artist points you to an art store sale, so you can paint your masterpiece.</li>
-                        <li>A local home-builder recommends chemical-free carpet cleaners, so you can play tummy time with the baby.</li>
-                        <li>A chef reveals her secrets for faster potato salad prep, so you can enjoy the picnic with your friends.</li>
-                        <li>A physical therapist shares stretching tips, so you can heal your hamstring and get back to coaching the kids' soccer team.</li>
-                        <li>An interior decorator divulges her top choice for kitchen fixtures, so you can finish your remodel and start cooking with the family.</li> 
-                    </ul>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/skijump.jpg" alt="">
-                </div>
+    <div class="container-fluid-nopad">
+    <section id="content-1" class="content-block-nopad content-right">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Vanquish chores, focus on what you love</h2>
+                <p class="lead">No wonder you don't have enough time for relaxing with family and friends or creating your passion project. 
+                    You're juggling life's chores on top of your career &mdash; keeping up with all those house repairs, booking the kids' summer activities, 
+                    stocking the groceries, hiring a dog-walker, planning a trip, and choosing a new doctor. 
+                    <br/><br/>
+                    Rescue your time from researching life's nitty-gritty tasks. 
+                    Your team of Doozer experts uncovers answers for you, so you squash your to-do list with less effort. 
+                    You get to focus on the bigger picture and save your energy for what you love. 
+                </p>
             </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">The answers are in your to-do list</h2>
-                    <p class="lead">Sure, Doozer is an elegant to-do list helping you focus on the right tasks, 
-                        but wouldn't you rather cross them off than move them around? 
-                        <br/><br/>
-                        There's the plumber who will fix your leak, the perfect gift for an upcoming wedding, 
-                        and the instructions to build your own vegetable garden 
-                        &mdash; right there in your to-do list.
-                        </p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/glass.jpg" alt="">
-                </div>
+            <div class="col-sm-6 col-lg-3 col-lg-offset-3">
+                <img class="img-responsive" src="img/skijump.jpg" alt="" />
             </div>
-
         </div>
-        <!-- /.container -->
+    </section><!-- /.content-1 -->
 
-    </div>
-    <!-- /.content-section-b -->
+    <section id="cycle-1" class="row content-block bg-sunflower">
+        <div class="col-xs-12 text-center marina owl-carousel owl-theme scenario-carousel">
+           <h3 class="cycle-item">An artist points you to an art store sale, so you can paint your masterpiece.</h3>
+           <h3 class="cycle-item">A local home-builder recommends chemical-free carpet cleaners, so you can play tummy time with the baby.</h3>
+           <h3 class="cycle-item">A chef reveals her secrets for faster potato salad prep, so you can enjoy the picnic with your friends.</h3>
+           <h3 class="cycle-item">A physical therapist shares stretching tips, so you can heal your hamstring and get back to coaching the kids' soccer team.</h3>
+           <h3 class="cycle-item">An interior decorator divulges her top choice for kitchen fixtures, so you can finish your remodel and start cooking with the family.</h3>
+        </div>
+    </section><!-- /.cycle-1 -->
 
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Take on any task with your team of experts</h2>
-                    <p class="lead">Why start from scratch with your game plan? Doozer experts already know the 
-                        best services, deals, products, and DIY how-to's. 
-                        These experienced hobbyists and professionals in your community equip you with the answers 
-                        to get your tasks done. 
-                    </p>
-                    <ul>
-                        <li>Grow beautiful tomatoes with expertise from an edible landscaper.</li>
-                        <li>Build a sturdy bookcase with trade secrets from a carpenter.</li>
-                        <li>Book the perfect restaurant for your anniversary with a suggestion from a local chef.</li>
-                        <li>Hire a top-notch roofer with the wisdom of a local home-builder.</li>
-                        <li>Find a great deal on those shoes and discover a local boutique with savvy tips from a fashion blogger.</li>
-                    </ul>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/dogs.jpg" alt="">
-                </div>
+    <section id="content-2" class="content-block-nopad content-left">
+        <div class="row">
+            <div class="col-sm-6 col-lg-3">
+                <img class="img-responsive" src="img/glass.jpg" alt="" />
             </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-	<a  name="contact"></a>
-    <div class="banner">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-9">
-                    <h2>The tips you need to be a hero</h2>
-                </div>
+            <div class="col-sm-6 col-lg-offset-3">
+                <h2>The answers are in your to-do list</h2>
+                <p class="lead">Sure, Doozer is an elegant to-do list helping you focus on the right tasks, 
+                    but wouldn't you rather cross them off than move them around? 
+                    <br/><br/>
+                    There's the plumber who will fix your leak, the perfect gift for an upcoming wedding, 
+                    and the instructions to build your own vegetable garden 
+                    &mdash; right there in your to-do list.
+                </p>
             </div>
-
         </div>
-        <!-- /.container -->
+    </section><!-- /.content-2 -->
 
+    <section id="content-3" class="content-block-nopad content-right">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Take on any task with your team of experts</h2>
+                <p class="lead">Why start from scratch with your game plan? Doozer experts already know the 
+                    best services, deals, products, and DIY how-to's. 
+                    These experienced hobbyists and professionals in your community equip you with the answers 
+                    to get your tasks done. 
+                </p>
+            </div>
+            <div class="col-sm-6 col-lg-3 col-lg-offset-3">
+                <img class="img-responsive" src="img/dogs.jpg" alt="" />
+            </div>
+        </div>
+    </section><!-- /.content-3 -->
+
+    <section id="cycle-2" class="row content-block bg-sunflower">
+    <div class="col-xs-12 text-center marina owl-carousel owl-theme scenario-carousel">
+       <h3 class="cycle-item">Grow beautiful tomatoes with expertise from an edible landscaper.</h3>
+       <h3 class="cycle-item">Build a sturdy bookcase with trade secrets from a carpenter.</h3>
+       <h3 class="cycle-item">Book the perfect restaurant for your anniversary with a suggestion from a local chef.</h3>
+       <h3 class="cycle-item">Hire a top-notch roofer with the wisdom of a local home-builder.</h3>
+       <h3 class="cycle-item">Find a great deal on those shoes and discover a local boutique with savvy tips from a fashion blogger.</h3>
     </div>
-    <!-- /.banner -->
+    </section><!-- /.cycle-2 -->
+    
+    </div><!-- /.container-fluid-nopad -->
+
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Doozer Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Join</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Doozer, Inc. 2015. All Rights Reserved</p>
-                </div>
+    <div class="container-fluid">
+        <!-- Start Footer 1-4 (bskit)-->
+        <div class="row footer-1-4">
+    		<form class="footer-form col-xs-6 col-xs-offset-3" action="#">
+                <div class="form-group">
+                <label class="label h3" for="emailbottom">Get notified when we launch in your area: </label>
+            	<div class="input-group">
+            		<input type="email" class="form-control" id="emailbottom" placeholder="you@email.com">
+            		<span class="input-group-btn">
+            			<a class="btn btn-primary" type="button">send</a>
+            		</span>
+            	</div>
+                </div><!-- /.form-group -->
+            </form>
+            <div class="col-xs-12">
+                <img src="img/favicon.png" class="center-block img-responsive">
             </div>
-        </div>
+            <ul class="social social-light col-xs-12">
+    			<li><a href="#"><i class="fa fa-2x fa-envelope"></i></a></li>
+    			<li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
+    			<li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+    		</ul><!-- /.social -->
+        </div><!-- /.row --><!--// END Footer 1-4 -->   
+        <!-- Start Footer Copyright Bar (bskit) -->
+        <div class="row copyright-bar clearfix">
+			<p class="pull-left small"><span class="fa fa-copyright"></span> 2015 Doozer, Inc.   &sdot;   <a href="#">Terms</a>   &sdot;   <a href="#">Privacy</a></p>
+			<p class="pull-right small"><a href="#">Contact us</a>   &sdot;   Made with <span class="fa fa-heart pomegranate"></span> in Seattle</p>
+        </div><!-- /.row --><!--// END Footer Copyright Bar -->
+    </div><!-- /.container-fluid -->
     </footer>
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    
+    <!-- Theme Scripts -->
+	<script type="text/javascript" src="js/bskit-scripts.js"></script>
 
 </body>
 
