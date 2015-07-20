@@ -95,6 +95,8 @@ body {
 .pad45 { padding-top:45px; }
 .pad60 { padding-top:60px; }
 .pad90 { padding-top:90px; }
+.pad-right20 { padding-right:20px; }
+.pad-left20 { padding-left:20px; }
 
 .min-height-100px { min-height: 100px; }
 .min-height-200px { min-height: 200px; }
@@ -261,6 +263,44 @@ img.media-object.img-responsive {
 }
 
 .center-block {
+    display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.image-container {
+	padding: 0px;
+	position: absolute;
+	top: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.screenshot-container{
+	padding: 0px 35px;
+		/*TODO: on xs screen, need to change padding to centered... also put these things in a separate left-side class?? */
+	position: absolute;
+	top: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+
+.image-container .background-image-holder {
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	width: auto;
+}
+
+.screenshot-container .img-screenshot-holder {
+	height: 100%;
+	width: auto;
+	/*centering*/
     display: block;
 	margin-right: auto;
 	margin-left: auto;
@@ -475,6 +515,7 @@ footer {
 .copyright-bar {
 	height: 70px;
 	padding-top: 20px;
+	/*TODO: is this position setting needed?*/
 	position: relative;
 	bottom: 0;
 	border-top: #BDC3C7 1px solid;
@@ -1094,8 +1135,7 @@ fieldset[disabled] .form-control {
 
 
 /*===================================================================================*/
-/*	CONTENT BLOCK HOLDERS
-/* (TODO: around each content strip - should they be used or deleted?)
+/*	CONTENT BLOCK HOLDERS 
 /*===================================================================================*/
 
 .content-block {
@@ -1110,17 +1150,21 @@ fieldset[disabled] .form-control {
 
 .content-block-nopad {
 	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
 	z-index: 100;
 	position: relative;
 	background-color: #ffffff;
 }
 
-.content-right {
-	padding-left: 60px;
+.content-left {
+	padding: 60px 15px 60px 35px;
 }
 
-.content-left {
-	padding-right: 60px;
+.content-right {
+	padding: 60px 35px 60px 15px;
+	/*TODO: add a case here for xs size - then the padding changes to left: 35... right??*/
+	float: right;
 }
 
 .scenario-carousel {
@@ -1157,6 +1201,27 @@ fieldset[disabled] .form-control {
   		margin-right: auto;
   		margin-left: auto;
 	}	
+	
+	.image-container{
+		position: static;
+		min-height: 400px;
+	}
+	
+	.image-container .background-image-holder {
+		min-height: 400px;
+	}
+	
+	.screenshot-container{
+		position: static;
+		max-height: 400px;
+	}
+	.screenshot-container .img-screenshot-holder {
+		display: block;
+	    max-width: 100%;
+	    max-height: 400px;
+	    width: auto;
+	    height: auto;
+	}
 }
 
 /* Small Devices, Tablets */

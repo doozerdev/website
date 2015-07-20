@@ -16,17 +16,72 @@ Version: 1.0
 }
 
 #header-3 .brand {
-	/*position: relative;*/
-	margin-top: 100px;
+	margin-top: 200px;
 }
 
-#header-3 .brand-img {
-	position: absolute;
-	left: 15px;
-	top: 0;
-	max-width: 150px;
+
+#header-3 .hero {
+	background: url('../img/sparkler_unsplash.jpg') no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 50px 0 50px 0;
+	height: auto;
 }
 
+#header-3 .hero h1 {
+	margin-bottom: 10px;
+	color: aliceblue; 
+}
+
+#header-3 .hero h2 {
+	margin-top: 20px;
+	margin-bottom: 60px;
+	color: aliceblue;
+}
+
+#header-3 .hero h1,
+#header-3 .hero h2 {
+	/*
+	font-family: "alverata-informal-pe";
+	font-family: "ff-dax-web-pro";
+	font-family: "ubuntu";
+	font-family: "futura-pt";
+	*/	
+	font-family: "ff-dax-web-pro";
+	font-weight: 500;
+}
+
+#header-3 .hero .label {
+	font-weight: 400;
+	color: aliceblue;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  
+	
+  
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+ 	#header-3 .brand-sm {
+	 	margin-top: 200px;
+	}
+	
+  
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  
+	
+	  
+}
+
+
+/* UNUSED - FOR NAV BAR
 #header-3 nav {
 	background-color: #233447;
 	margin-top: -1px;
@@ -134,72 +189,14 @@ Version: 1.0
 	right: 0 !important;
 }
 
+#header-3 .brand-img {
+	position: absolute;
+	left: 15px;
+	top: 0;
+	max-width: 150px;
+}
+
+
+
 #header-3 .pull { display: none; }
-
-
-#header-3 .hero {
-	/*background: url('../img/intro-bg.jpg') no-repeat center center;*/
-	background: #193441 no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	padding: 50px 0 300px 0;
-	height: auto;
-}
-
-#header-3 .hero h1 {
-	/*margin-top: 100px;
-	font-weight: 600;
-	color: #31152B;*/
-	margin-bottom: 10px;
-	color: floralwhite; 
-}
-
-#header-3 .hero h2 {
-	/*font-weight: 600;
-	color: #723147;*/
-	margin-top: 20px;
-	margin-bottom: 80px;
-	color: aliceblue;
-}
-
-#header-3 .hero h1,
-#header-3 .hero h2 {
-	/*
-	font-family: "alverata-informal-pe";
-	font-family: "ff-dax-web-pro";
-	font-family: "ubuntu";
-	font-family: "ff-dax-web-pro-condensed";
-	font-family: "futura-pt";
-	*/	
-	font-family: "alverata-informal-pe";
-	font-weight: 500;
-}
-
-#header-3 .hero .label {
-	font-weight: 400;
-	color: aliceblue;
-}
-
-
-/* Extra small devices (phones, less than 768px) */
-@media (max-width: 767px) {
-  
-	
-  
-}
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
- 	#header-3 .brand-sm {
-		margin-top: 100px;
-	}
-	
-  
-}
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  
-	
-	  
-}
+*/
