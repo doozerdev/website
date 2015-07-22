@@ -44,24 +44,28 @@ Version: 1.0
 #header-3 .hero h1,
 #header-3 .hero h2 {
 	/*
-	font-family: "alverata-informal-pe";
+	font-family: "alverata-informal-pe"; --removed
 	font-family: "ff-dax-web-pro";
 	font-family: "ubuntu";
 	font-family: "futura-pt";
+	font-family: "co-headline"; (700, all rest are 500)
 	*/	
-	font-family: "ff-dax-web-pro";
-	font-weight: 500;
+	font-family: "co-headline";
+	font-weight: 700;
 }
 
 #header-3 .hero .label {
 	font-weight: 400;
 	color: aliceblue;
+	white-space: nowrap;
 }
 
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
-  
+	#header-3 .hero .label {
+		white-space: normal;
+	}  
 	
   
 }
