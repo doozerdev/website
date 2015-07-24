@@ -24,6 +24,12 @@ body {
 
 /* BACKGROUND COLORS */
 
+.bg-dzr-brand {background-color: #00b3c1;}
+.bg-dzr-yellow {background-color: #ebb600;}
+.bg-dzr-light {background-color: #e5f7f8;}
+.bg-dzr-dark {background-color: #00474d;}
+
+
 .bg-black { background-color: #111111 !important; }
 .bg-white { background-color: #FFFFFF !important; }
 .bg-offwhite { background-color: #F5F5F5 !important; }
@@ -52,6 +58,17 @@ body {
 
 
 /* COLORS */
+
+.dzr-brand {color: #00b3c1;}
+.dzr-brand-hover {color: #008f9a;}
+.dzr-lighttext {color: #e5f7f8;}
+.dzr-darktext {color: #00474d;}
+.dzr-green {color: #88c048;}
+.dzr-blue {color: #37b3c0;}
+.dzr-red {color: #FD6C6E;}
+.dzr-purple {color: #C066AE;}
+.dzr-yellow {color: #ebb600;}
+
 
 .black { color: #111111; }
 .white { color: #FFFFFF; }
@@ -124,10 +141,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: "proxima-nova";
 	font-weight: 400;
 	font-style: normal;
+	color: #00474d; /*color - dzr-darktext */
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
 	color: #e5e5e5;
+	/*color - dzr-?? TODO if used */
 }
 
 h1, h2, h3 {
@@ -153,7 +172,7 @@ h1, h2 {
 p {
 	font-size: 14px;
 	margin: 15px 0;
-	color: #515157;
+	color: #00474d; /*color - dzr-darktext */
 }
 
 .lead {
@@ -166,6 +185,7 @@ p {
 	font-family: "proxima-nova-alt-condensed";
 	font-size: 30px;
 	font-weight: 300;
+	color: #00474d;	/*color - dzr-darktext */
 }
 
 small, .small {
@@ -173,14 +193,16 @@ small, .small {
 	line-height: 2;
 }
 
-em { color: #ff6600; }
+em { color: #00b3c1; } /*color - dzr-brand */
 
 /* LINKS */
 
-a { color: #1abc9c; }
+a { 
+	color: #00b3c1; /*color - dzr- brand */ 
+}
 
 a:hover {
-	color: #16a085;
+	color: #e5f7f8; /*color - dzr- lighttext */
 	text-decoration: none;
 	-moz-transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
@@ -188,7 +210,10 @@ a:hover {
 	transition: all 0.3s ease;
 }
 
-/* LISTS */
+/*===================================================================================*/
+/*	LISTS
+/*===================================================================================*/
+/*color - dzr-? TODO if these get used... currently not used */
 
 ol {
 	position: relative;
@@ -219,33 +244,12 @@ ul.circle li:before {
 	position: absolute;
 }
 
-/* TITLES */
-
-.underlined-title {
-	text-align: center;
-	padding-bottom: 30px;
-}
-
-.underlined-title h1 {
-	color: #2c3e50;
-	margin: 0;
-}
-
-.underlined-title h2 {
-	font-size: 20px;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #95a5a6;
-}
-
-.underlined-title hr {
-	width: 10%;
-	border-width: 2px;
-	border-color: #16a085;
-}
 
 
-/* IMAGES */
+/*===================================================================================*/
+/*	IMAGES
+/*===================================================================================*/
+
 img.media-object.img-responsive {
 	max-width: none;
 }
@@ -298,6 +302,7 @@ img.media-object.img-responsive {
 /*===================================================================================*/
 /*	BUTTONS
 /*===================================================================================*/
+/*color - dzr- these are form buttons at rest - TODO colors for other types of buttons as needed */
 
 .btn {
     color: #FFF;
@@ -358,12 +363,12 @@ p .btn {
 
 /* Button PRIMARY */
 .btn.btn-primary {
-	background: #1abc9c;
-	box-shadow: 0 2px #16a085;
+	background: #00b3c1; /*color - dzr-brand */
+	box-shadow: 0 2px #008f9a; /*color - dzr-brand-hover */
 }
 
 .btn.btn-primary:hover {
-	background: #16a085;
+	background: #008f9a; /*color - dzr-brand-hover */
 }
 
 /* Button WARNING */
@@ -496,7 +501,7 @@ button:hover {
 /*===================================================================================*/
 
 footer {
-	background-color: #233447;
+	background-color: #00474d; /*color - dzr-dark */
 }
 
 .copyright-bar {
@@ -504,12 +509,12 @@ footer {
 	padding-top: 20px;
 	position: relative;
 	bottom: 0;
-	border-top: #BDC3C7 1px solid;
+	border-top: #e5f7f8 1px solid; /*color - dzr-lighttext */
 }
 
 .copyright-bar p {
 	font-weight: 300;
-	color: #BDC3C7;
+	color: #e5f7f8; /*color - dzr-lighttext */
 	margin: 0 20px;
 }
 
@@ -523,7 +528,7 @@ footer {
 .footer-1-4 .h2,
 .footer-1-4 h3,
 .footer-1-4 .h3 {
-	color: #ffffff;
+	color: #e5f7f8; /*color - dzr-lighttext */
 }
 
 .footer-1-4 .footer-form {
@@ -562,9 +567,9 @@ footer {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    width: 34px;
-    height: 34px;
-    font-size: 18px;
+    width: 45px;
+    height: 45px;
+	font-size: 30px;   /* old value - font-size: 18px; */
     -webkit-transition: all 200ms ease-out;
        -moz-transition: all 200ms ease-out;
          -o-transition: all 200ms ease-out;
@@ -572,11 +577,11 @@ footer {
 }
 
 .social-light li a i {
-	color: #ffffff;
+	color: #e5f7f8; /*color - dzr-lighttext */
 }
 
 .social-dark li a i {
-	color: #666666;
+	color: #00474d; /*color - dzr-darktext */
 }
 
 .social li a i:after {
@@ -593,13 +598,13 @@ footer {
             transition: all 200ms ease-out;
 }
 .social li a:hover i {
-	color: #f0f0f0;
+	color: #ffffff;
 }
 .social li a:hover i:after {
 	height: 100%;
 }
 .social a .fa-envelope:after {
-    background: rebeccapurple;
+    background: #00b3c1; /*color - dzr-brand */
 }
 .social a .fa-facebook:after {
     background: #3b5998;
@@ -643,7 +648,7 @@ fieldset legend {
 
 .form-control {
 	border: 2px solid #ecf0f1;
-	color: #34495e;
+	color: #00474d; /*color - dzr-darktext */
 	font-size: 18px;
 	font-weight: 300;
 	padding: 8px 12px;
@@ -672,7 +677,8 @@ fieldset legend {
 
 .form-group.focus .form-control,
 .form-control:focus {
-	border-color: #1abc9c;
+	/*color - dzr-brand */
+	border-color: #00b3c1;
 	outline: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -698,17 +704,20 @@ fieldset[disabled] .form-control {
 }
 
 .form-control.form-minimal:focus {
-	border-color: #1abc9c;
+	/*color - dzr-brand */
+	border-color: #00b3c1;
 }
 
 
 .has-success .help-block,
 .has-success .control-label {
-  color: #2ecc71;
+	/*color - dzr-brand */
+  color: #00b3c1;
 }
 .has-success .form-control {
-  color: #2ecc71;
-  border-color: #2ecc71;
+	/*color - dzr-brand , or diff success state? */
+  color: #00b3c1;
+  border-color: #00b3c1;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -730,13 +739,15 @@ fieldset[disabled] .form-control {
   color: #2ecc71;
 }
 .has-success .form-control:focus {
-  border-color: #2ecc71;
+	/*color - dzr-brand */
+  border-color: #00b3c1;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 .has-success .input-group-addon {
-  color: #2ecc71;
-  border-color: #2ecc71;
+	/*color - dzr-brand */
+  color: #00b3c1;
+  border-color: #00b3c1;
   background-color: #ffffff;
 }
 
@@ -745,6 +756,7 @@ fieldset[disabled] .form-control {
   color: #f1c40f;
 }
 .has-warning .form-control {
+	/*color - dzr-warning */
   color: #f1c40f;
   border-color: #f1c40f;
   -webkit-box-shadow: none;
@@ -783,6 +795,7 @@ fieldset[disabled] .form-control {
   color: #e74c3c;
 }
 .has-error .form-control {
+	/*color - dzr-error */
   color: #e74c3c;
   border-color: #e74c3c;
   -webkit-box-shadow: none;
@@ -824,7 +837,7 @@ fieldset[disabled] .form-control {
 }
 
 
-/* FORM - INPUT ICON */
+/* FORM - INPUT ICON - not currently used */
 .form-control + .input-icon {
 	position: absolute;
 	top: 2px;
@@ -855,7 +868,7 @@ fieldset[disabled] .form-control {
 }
 
 
-/* FORM - INPUT GROUP */
+/* FORM - INPUT GROUP - USED for submission button on email */
 .input-group .input-group-btn .btn {
 	margin: 0;
 	box-shadow: none;
@@ -868,7 +881,7 @@ fieldset[disabled] .form-control {
 }
 
 .input-group .input-group-btn .btn:hover {
-	background: #1abc9c;
+	background: #008f9a; /*color - dzr-brand-hover */
 	color: #fff;
 }
 
@@ -1127,14 +1140,14 @@ fieldset[disabled] .form-control {
 /*  (spacing, padding, etc)
 /*===================================================================================*/
 
-.content-block {
+.content-block-cycle {
 	width: 100%;
 	padding: 30px 0 30px 0;
 	margin-left: 0px;
 	margin-right: 0px;
 	z-index: 100;
 	position: relative;
-	background-color: #ffffff;
+	background-color: #ebb600; /*color - dzr-yellow */
 }
 
 .content-block-nopad {
@@ -1143,7 +1156,7 @@ fieldset[disabled] .form-control {
 	margin-right: 0px;
 	z-index: 100;
 	position: relative;
-	background-color: #ffffff;
+	background-color: #ffffff; /*color - dzr-light?? */
 }
 
 .content-left {
@@ -1175,7 +1188,6 @@ fieldset[disabled] .form-control {
   margin-left: auto;
 }
 
-/*TODO: make sure this isn't overriding rows that need the margins and if so, make specific to cycle-1 & 2*/
 .container-fluid-nopad .row{
 	margin-right: 0px;
 	margin-left: 0px;

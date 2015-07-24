@@ -13,10 +13,13 @@ Version: 1.0
 
 #header-3 {
     width: 100%;
+	background-color: #233447; /*color - dzr-?? backup */
 }
 
 #header-3 .brand {
 	margin-top: 200px;
+	margin-bottom: 0px;
+	padding: 0px 0px 0px 15px;
 }
 
 
@@ -31,18 +34,8 @@ Version: 1.0
 }
 
 #header-3 .hero h1 {
-	margin-bottom: 10px;
-	color: aliceblue; 
-}
-
-#header-3 .hero h2 {
-	margin-top: 20px;
-	margin-bottom: 60px;
-	color: aliceblue;
-}
-
-#header-3 .hero h1,
-#header-3 .hero h2 {
+	color: #e5f7f8; /*color - dzr-lighttext */
+	
 	/*
 	font-family: "alverata-informal-pe"; --removed
 	font-family: "ff-dax-web-pro";
@@ -50,13 +43,23 @@ Version: 1.0
 	font-family: "futura-pt";
 	font-family: "co-headline"; (700, all rest are 500)
 	*/	
-	font-family: "co-headline";
-	font-weight: 700;
+	font-family: "futura-pt";
+	font-weight: 800;
 }
 
-#header-3 .hero .label {
+#header-3 .hero h2 {
+	margin-top: 20px;
+	margin-bottom: 60px;
+	color: #e5f7f8; /*color - dzr-lighttext */
+	
+	font-family: "proxima-nova";
 	font-weight: 400;
-	color: aliceblue;
+} 
+
+#header-3 .hero .label {
+	font-family: "proxima-nova";
+	font-weight: 400;
+	color: #e5f7f8; /*color - dzr-lighttext */
 	white-space: nowrap;
 }
 
@@ -73,6 +76,8 @@ Version: 1.0
 @media (min-width: 768px) {
  	#header-3 .brand-sm {
 	 	margin-top: 200px;
+		margin-bottom: 0px;
+		padding: 0px 0px 0px 15px;
 	}
 	
   
