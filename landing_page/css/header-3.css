@@ -33,8 +33,8 @@ Version: 1.0
 	height: auto;
 }
 
-#header-3 .hero h1 {
-	color: #e5f7f8; /*color - dzr-lighttext */
+#header-3 .hero .dzrname {
+	color: #e5f6f9; /*color - dzr-lighttext */
 	
 	/*
 	font-family: "alverata-informal-pe"; --removed
@@ -47,10 +47,10 @@ Version: 1.0
 	font-weight: 800;
 }
 
-#header-3 .hero h2 {
+#header-3 .hero .tagline {
 	margin-top: 20px;
 	margin-bottom: 60px;
-	color: #e5f7f8; /*color - dzr-lighttext */
+	color: #e5f6f9; /*color - dzr-lighttext */
 	
 	font-family: "proxima-nova";
 	font-weight: 400;
@@ -59,7 +59,7 @@ Version: 1.0
 #header-3 .hero .label {
 	font-family: "proxima-nova";
 	font-weight: 400;
-	color: #e5f7f8; /*color - dzr-lighttext */
+	color: #e5f6f9; /*color - dzr-lighttext */
 	white-space: nowrap;
 }
 
