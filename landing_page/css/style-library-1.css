@@ -108,8 +108,10 @@ Current logo is #00b3c1, but all the derivatives are off of #00aac8 to shift blu
 .pad45 { padding-top:45px; }
 .pad60 { padding-top:60px; }
 .pad90 { padding-top:90px; }
-.pad-right20 { padding-right:20px; }
-.pad-left20 { padding-left:20px; }
+.pad-right15 { padding: 0 15px 0 0; }
+.pad-left15 { padding: 0 0 0 15px; }
+.pad-lr15 { padding: 0px 15px; }
+.pad-none {padding: 0px;}
 
 .min-height-100px { min-height: 100px; }
 .min-height-200px { min-height: 200px; }
@@ -204,11 +206,13 @@ p {
 .font-icon{
 	margin-top: 35px;
 	margin-bottom: 0px;
+	padding: 0px;
 }
 .font-icon span{
 	margin-top: 2px;
 	margin-bottom: 20px;
 	font-size: 24px;
+	padding: 0px;
 }
 
 small, .small {
@@ -303,15 +307,6 @@ img.media-object.img-responsive {
     bottom: 0px;
 }
 
-.screenshot-container{
-	padding: 40px 35px 40px;
-	position: absolute;
-	top: 0px;
-    left: 0px;
-    bottom: 0px;
-}
-
-
 .image-container .background-image-holder {
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -323,8 +318,31 @@ img.media-object.img-responsive {
 	width: auto;
 }
 
-.screenshot-container .img-screenshot-holder {
+.screenshot-container{
+	padding: 60px 35px;
+	position: absolute;
+	top: 0px;
+    left: 0px;
+    bottom: 0px;
+	display: block;
 	height: 100%;
+}
+
+.screenshot-container-right{
+	padding: 60px 35px;
+	position: absolute;
+	top: 0px;
+    right: 0px;
+    bottom: 0px;
+	display: block;
+	height: 100%;
+}
+
+.screenshot-container .img-screenshot-holder,
+.screenshot-container-right .img-screenshot-holder {
+	max-height: 100%;
+	max-width: 75%;
+	height: auto;
 	width: auto;
 	/*centering*/
     display: block;
@@ -1227,6 +1245,10 @@ fieldset[disabled] .form-control {
 	margin-left: 0px;
 }
 
+.content-border{
+	border-bottom: #FFE385 1px solid; /*color - dzr-yellow - 30% whiter*/
+}
+
 
 /*===================================================================================*/
 /*	PATTERN LIBRARY MEDIA QUERIES
@@ -1279,15 +1301,17 @@ fieldset[disabled] .form-control {
 		min-height: 400px;
 	}
 	
-	.screenshot-container{
+	.screenshot-container,
+	.screenshot-container-right {
 		position: static;
-		max-height: 400px;
-		padding: 20px 35px 20px;
+		height: 400px;
+		padding: 0px 35px 40px;
 	}
-	.screenshot-container .img-screenshot-holder {
+	.screenshot-container .img-screenshot-holder,
+	.screenshot-container-right .img-screenshot-holder {
 		display: block;
 	    max-width: 100%;
-	    max-height: 360px;
+	    max-height: 100%;
 	    width: auto;
 	    height: auto;
 	}
