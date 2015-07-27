@@ -35,15 +35,7 @@ Version: 1.0
 
 #header-3 .hero .dzrname {
 	color: #e5f6f9; /*color - dzr-lighttext */
-	
-	/*
-	font-family: "alverata-informal-pe"; --removed
-	font-family: "ff-dax-web-pro";
-	font-family: "ubuntu";
-	font-family: "futura-pt";
-	font-family: "co-headline"; (700, all rest are 500)
-	*/	
-	font-family: "futura-pt";
+	font-family: "futura-pt", sans-serif;
 	font-weight: 800;
 }
 
@@ -52,12 +44,12 @@ Version: 1.0
 	margin-bottom: 60px;
 	color: #e5f6f9; /*color - dzr-lighttext */
 	
-	font-family: "proxima-nova";
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
 } 
 
 #header-3 .hero .label {
-	font-family: "proxima-nova";
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
 	color: #e5f6f9; /*color - dzr-lighttext */
 	white-space: nowrap;

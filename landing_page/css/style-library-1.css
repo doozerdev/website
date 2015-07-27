@@ -137,14 +137,14 @@ Current logo is #00b3c1, but all the derivatives are off of #00aac8 to shift blu
 
 *,
 body {
-	font-family: "proxima-nova";
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 16px; /*sets up the base size for responsive scaling 1em = 16px */
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: "proxima-nova";
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	line-height: 1.4;
@@ -174,7 +174,7 @@ h5, .h5 { font-size: 18px; }
 h6, .h6 { font-size: 16px; }
 
 h1, h2 {
-	font-family: "proxima-nova-condensed";
+	font-family: "proxima-nova-condensed", sans-serif;
 	font-weight: 600;
 }
 
@@ -186,6 +186,7 @@ p {
 
 .lead {
 	font-size: 18px;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
 	margin-top: 35px;
 	margin-bottom: 0px;
@@ -195,7 +196,7 @@ p {
 }
 
 .cycle-item {
-	font-family: "proxima-nova-alt-condensed";
+	font-family: "proxima-nova-alt-condensed-n3", "proxima-nova-alt-condensed", sans-serif;
 	font-size: 30px;
 	font-weight: 300;
 	color: #004450;	/*color - dzr-darktext */
@@ -222,11 +223,13 @@ small, .small {
 
 .form-group {
 	font-size: 18px;
+	font-family: "proxima-nova-n3", "proxima-nova", sans-serif;
 	font-weight: 300;
 }
 
 label, .label {
 	font-size: 24px;
+	font-family: "proxima-nova-n3", "proxima-nova", sans-serif;
 	font-weight: 300;
 	padding: 10px 0px;
 	margin: 0px;
@@ -267,7 +270,6 @@ ul {
 
 ul li,
 ol li {
-	/*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
 	font-size: 14px;
 	color: #515157;
 	margin-bottom: 5px;
@@ -361,7 +363,6 @@ img.media-object.img-responsive {
     color: #FFF;
     padding: 10px 20px;
 	margin: 15px 0;
-	/*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
     font-size: 14px;
     font-weight: 600;
 	letter-spacing: 0.1em;
@@ -480,7 +481,6 @@ p .btn {
 	color: #FFF;
     padding: 12px 20px;
 	margin: 15px 0;
-	/*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
     font-weight: 600;
     font-size: 14px;
     text-align: center;
@@ -566,6 +566,7 @@ footer {
 }
 
 .copyright-bar p {
+	font-family: "proxima-nova-n3", "proxima-nova", sans-serif;
 	font-weight: 300;
 	color: #e5f6f9; /*color - dzr-lighttext */
 	margin: 0 20px;
@@ -921,6 +922,7 @@ fieldset[disabled] .form-control {
 	box-shadow: none;
 	text-transform: uppercase;
 	font-size: 14px;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
 	/*
 	padding-top: 8px;
@@ -966,7 +968,6 @@ fieldset[disabled] .form-control {
 	border-color: inherit !important;
 }
 .panel-title {
-	/*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
     font-size: 15px;
     font-weight: 700;
 	text-transform: uppercase;
@@ -1095,7 +1096,6 @@ fieldset[disabled] .form-control {
 /*===================================================================================*/
 
 .pagination li a {
-	/*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
 	font-size: 14px;
 	color: #16A085;
 	background: none;
@@ -1152,7 +1152,6 @@ fieldset[disabled] .form-control {
 	border: 1px solid #16A085;
 	border-radius: 0;
 	color: #16A085;
-	/*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
 	font-size: 14px;
 	min-width: 160px;
 }
@@ -1267,8 +1266,9 @@ fieldset[disabled] .form-control {
 		font-size: 16px;
 	}
 	.cycle-item {
-		font-size: 24px;
-		font-weight: 300;
+		font-family: "proxima-nova-alt-condensed-n4", "proxima-nova-alt-condensed", sans-serif;
+		font-size: 21px;
+		font-weight: 400;
 	}
 	.font-icon span{
 		font-size: 20px;
