@@ -24,6 +24,12 @@ body {
 
 /* BACKGROUND COLORS */
 
+.bg-dzr-brand {background-color: #00b3c1;}
+.bg-dzr-yellow {background-color: #ebb600;}
+.bg-dzr-light {background-color: #e5f6f9;}
+.bg-dzr-dark {background-color: #004450;} 
+
+
 .bg-black { background-color: #111111 !important; }
 .bg-white { background-color: #FFFFFF !important; }
 .bg-offwhite { background-color: #F5F5F5 !important; }
@@ -52,6 +58,19 @@ body {
 
 
 /* COLORS */
+
+/*TODO: update with final brand colors. 
+Current logo is #00b3c1, but all the derivatives are off of #00aac8 to shift blue-er */
+.dzr-brand {color: #00b3c1;}
+.dzr-brand-hover {color: #0088a0;}
+.dzr-lighttext {color: #e5f6f9;}
+.dzr-darktext {color: #004450;}
+.dzr-green {color: #88c048;}
+.dzr-blue {color: #37b3c0;}
+.dzr-red {color: #FD6C6E;}
+.dzr-purple {color: #C066AE;}
+.dzr-yellow {color: #ebb600;}
+
 
 .black { color: #111111; }
 .white { color: #FFFFFF; }
@@ -89,8 +108,10 @@ body {
 .pad45 { padding-top:45px; }
 .pad60 { padding-top:60px; }
 .pad90 { padding-top:90px; }
-.pad-right20 { padding-right:20px; }
-.pad-left20 { padding-left:20px; }
+.pad-right15 { padding: 0 15px 0 0; }
+.pad-left15 { padding: 0 0 0 15px; }
+.pad-lr15 { padding: 0px 15px; }
+.pad-none {padding: 0px;}
 
 .min-height-100px { min-height: 100px; }
 .min-height-200px { min-height: 200px; }
@@ -114,28 +135,35 @@ body {
 
 /** TYPOGRAPHY **/
 
-* {
-	font-family: "proxima-nova";
+*,
+body {
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	font-size: 16px; /*sets up the base size for responsive scaling 1em = 16px */
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: "proxima-nova";
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	line-height: 1.4;
+	color: #004450; /*color - dzr-darktext */
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
 	color: #e5e5e5;
+	/*color - dzr-?? TODO if used */
 }
 
 h1, h2, h3 {
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 0px;
 }
 
 h4, h5, h6 {
-	margin-bottom: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 h1, .h1 { font-size: 44px; }
@@ -146,26 +174,46 @@ h5, .h5 { font-size: 18px; }
 h6, .h6 { font-size: 16px; }
 
 h1, h2 {
-	font-family: "proxima-nova-condensed";
+	font-family: "proxima-nova-condensed", sans-serif;
 	font-weight: 600;
 }
 
 p {
 	font-size: 14px;
 	margin: 15px 0;
-	color: #515157;
+	color: #004450; /*color - dzr-darktext */
 }
 
 .lead {
 	font-size: 18px;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
-	margin-bottom: 40px;
+	margin-top: 35px;
+	margin-bottom: 0px;
+}
+.lead.title-above {
+	margin-top: 15px;
 }
 
 .cycle-item {
-	font-family: "proxima-nova-alt-condensed";
+	font-family: "proxima-nova-alt-condensed-n3", "proxima-nova-alt-condensed", sans-serif;
 	font-size: 30px;
 	font-weight: 300;
+	color: #004450;	/*color - dzr-darktext */
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.font-icon{
+	margin-top: 35px;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+.font-icon span{
+	margin-top: 2px;
+	margin-bottom: 20px;
+	font-size: 24px;
+	padding: 0px;
 }
 
 small, .small {
@@ -173,14 +221,30 @@ small, .small {
 	line-height: 2;
 }
 
-em { color: #ff6600; }
+.form-group {
+	font-size: 18px;
+	font-family: "proxima-nova-n3", "proxima-nova", sans-serif;
+	font-weight: 300;
+}
+
+label, .label {
+	font-size: 24px;
+	font-family: "proxima-nova-n3", "proxima-nova", sans-serif;
+	font-weight: 300;
+	padding: 10px 0px;
+	margin: 0px;
+}
+
+em { color: #00b3c1; } /*color - dzr-brand */
 
 /* LINKS */
 
-a { color: #1abc9c; }
+a { 
+	color: #00b3c1; /*color - dzr- brand */ 
+}
 
 a:hover {
-	color: #16a085;
+	color: #e5f6f9; /*color - dzr- lighttext */
 	text-decoration: none;
 	-moz-transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
@@ -188,7 +252,10 @@ a:hover {
 	transition: all 0.3s ease;
 }
 
-/* LISTS */
+/*===================================================================================*/
+/*	LISTS
+/*===================================================================================*/
+/*color - dzr-? TODO if these get used... currently not used */
 
 ol {
 	position: relative;
@@ -203,7 +270,6 @@ ul {
 
 ul li,
 ol li {
-	/*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
 	font-size: 14px;
 	color: #515157;
 	margin-bottom: 5px;
@@ -219,33 +285,12 @@ ul.circle li:before {
 	position: absolute;
 }
 
-/* TITLES */
-
-.underlined-title {
-	text-align: center;
-	padding-bottom: 30px;
-}
-
-.underlined-title h1 {
-	color: #2c3e50;
-	margin: 0;
-}
-
-.underlined-title h2 {
-	font-size: 20px;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #95a5a6;
-}
-
-.underlined-title hr {
-	width: 10%;
-	border-width: 2px;
-	border-color: #16a085;
-}
 
 
-/* IMAGES */
+/*===================================================================================*/
+/*	IMAGES
+/*===================================================================================*/
+
 img.media-object.img-responsive {
 	max-width: none;
 }
@@ -264,15 +309,6 @@ img.media-object.img-responsive {
     bottom: 0px;
 }
 
-.screenshot-container{
-	padding: 20px 35px 0px;
-	position: absolute;
-	top: 0px;
-    left: 0px;
-    bottom: 0px;
-}
-
-
 .image-container .background-image-holder {
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -284,8 +320,31 @@ img.media-object.img-responsive {
 	width: auto;
 }
 
-.screenshot-container .img-screenshot-holder {
+.screenshot-container{
+	padding: 60px 35px;
+	position: absolute;
+	top: 0px;
+    left: 0px;
+    bottom: 0px;
+	display: block;
 	height: 100%;
+}
+
+.screenshot-container-right{
+	padding: 60px 35px;
+	position: absolute;
+	top: 0px;
+    right: 0px;
+    bottom: 0px;
+	display: block;
+	height: 100%;
+}
+
+.screenshot-container .img-screenshot-holder,
+.screenshot-container-right .img-screenshot-holder {
+	max-height: 100%;
+	max-width: 75%;
+	height: auto;
 	width: auto;
 	/*centering*/
     display: block;
@@ -298,12 +357,12 @@ img.media-object.img-responsive {
 /*===================================================================================*/
 /*	BUTTONS
 /*===================================================================================*/
+/*color - dzr- these are form buttons at rest - TODO colors for other types of buttons as needed */
 
 .btn {
     color: #FFF;
     padding: 10px 20px;
 	margin: 15px 0;
-	/*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
     font-size: 14px;
     font-weight: 600;
 	letter-spacing: 0.1em;
@@ -358,12 +417,12 @@ p .btn {
 
 /* Button PRIMARY */
 .btn.btn-primary {
-	background: #1abc9c;
-	box-shadow: 0 2px #16a085;
+	background: #00b3c1; /*color - dzr-brand */
+	box-shadow: 0 2px #0088a0; /*color - dzr-brand-hover */
 }
 
 .btn.btn-primary:hover {
-	background: #16a085;
+	background: #0088a0; /*color - dzr-brand-hover */
 }
 
 /* Button WARNING */
@@ -422,7 +481,6 @@ p .btn {
 	color: #FFF;
     padding: 12px 20px;
 	margin: 15px 0;
-	/*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
     font-weight: 600;
     font-size: 14px;
     text-align: center;
@@ -496,7 +554,7 @@ button:hover {
 /*===================================================================================*/
 
 footer {
-	background-color: #233447;
+	background-color: #004450; /*color - dzr-dark */
 }
 
 .copyright-bar {
@@ -504,12 +562,13 @@ footer {
 	padding-top: 20px;
 	position: relative;
 	bottom: 0;
-	border-top: #BDC3C7 1px solid;
+	border-top: #e5f6f9 1px solid; /*color - dzr-lighttext */
 }
 
 .copyright-bar p {
+	font-family: "proxima-nova-n3", "proxima-nova", sans-serif;
 	font-weight: 300;
-	color: #BDC3C7;
+	color: #e5f6f9; /*color - dzr-lighttext */
 	margin: 0 20px;
 }
 
@@ -523,7 +582,7 @@ footer {
 .footer-1-4 .h2,
 .footer-1-4 h3,
 .footer-1-4 .h3 {
-	color: #ffffff;
+	color: #e5f6f9; /*color - dzr-lighttext */
 }
 
 .footer-1-4 .footer-form {
@@ -562,9 +621,9 @@ footer {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    width: 34px;
-    height: 34px;
-    font-size: 18px;
+    width: 45px;
+    height: 45px;
+	font-size: 30px;   /*TODO: switch back to old value when add multiple buttons - font-size: 18px; */
     -webkit-transition: all 200ms ease-out;
        -moz-transition: all 200ms ease-out;
          -o-transition: all 200ms ease-out;
@@ -572,11 +631,11 @@ footer {
 }
 
 .social-light li a i {
-	color: #ffffff;
+	color: #e5f6f9; /*color - dzr-lighttext */
 }
 
 .social-dark li a i {
-	color: #666666;
+	color: #004450; /*color - dzr-darktext */
 }
 
 .social li a i:after {
@@ -593,13 +652,13 @@ footer {
             transition: all 200ms ease-out;
 }
 .social li a:hover i {
-	color: #f0f0f0;
+	color: #ffffff;
 }
 .social li a:hover i:after {
 	height: 100%;
 }
 .social a .fa-envelope:after {
-    background: rebeccapurple;
+    background: #00b3c1; /*color - dzr-brand */
 }
 .social a .fa-facebook:after {
     background: #3b5998;
@@ -643,9 +702,7 @@ fieldset legend {
 
 .form-control {
 	border: 2px solid #ecf0f1;
-	color: #34495e;
-	font-size: 18px;
-	font-weight: 300;
+	color: #004450; /*color - dzr-darktext */
 	padding: 8px 12px;
 	height: 40px;
 	-webkit-appearance: none;
@@ -661,18 +718,15 @@ fieldset legend {
 	margin-bottom: 20px;
 }
 
-.label {
+label, .label {
 	display: inline-block;
-	padding: 10px 0px;
-	margin: 0px;
 	white-space: normal;
-	font-size: 24px;
-	font-weight: 300;
 }
 
 .form-group.focus .form-control,
 .form-control:focus {
-	border-color: #1abc9c;
+	/*color - dzr-brand */
+	border-color: #00b3c1;
 	outline: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -698,17 +752,20 @@ fieldset[disabled] .form-control {
 }
 
 .form-control.form-minimal:focus {
-	border-color: #1abc9c;
+	/*color - dzr-brand */
+	border-color: #00b3c1;
 }
 
 
 .has-success .help-block,
 .has-success .control-label {
-  color: #2ecc71;
+	/*color - dzr-brand */
+  color: #00b3c1;
 }
 .has-success .form-control {
-  color: #2ecc71;
-  border-color: #2ecc71;
+	/*color - dzr-brand , or diff success state? */
+  color: #00b3c1;
+  border-color: #00b3c1;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -730,13 +787,15 @@ fieldset[disabled] .form-control {
   color: #2ecc71;
 }
 .has-success .form-control:focus {
-  border-color: #2ecc71;
+	/*color - dzr-brand */
+  border-color: #00b3c1;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 .has-success .input-group-addon {
-  color: #2ecc71;
-  border-color: #2ecc71;
+	/*color - dzr-brand */
+  color: #00b3c1;
+  border-color: #00b3c1;
   background-color: #ffffff;
 }
 
@@ -745,6 +804,7 @@ fieldset[disabled] .form-control {
   color: #f1c40f;
 }
 .has-warning .form-control {
+	/*color - dzr-warning */
   color: #f1c40f;
   border-color: #f1c40f;
   -webkit-box-shadow: none;
@@ -783,6 +843,7 @@ fieldset[disabled] .form-control {
   color: #e74c3c;
 }
 .has-error .form-control {
+	/*color - dzr-error */
   color: #e74c3c;
   border-color: #e74c3c;
   -webkit-box-shadow: none;
@@ -824,7 +885,7 @@ fieldset[disabled] .form-control {
 }
 
 
-/* FORM - INPUT ICON */
+/* FORM - INPUT ICON - not currently used */
 .form-control + .input-icon {
 	position: absolute;
 	top: 2px;
@@ -855,12 +916,13 @@ fieldset[disabled] .form-control {
 }
 
 
-/* FORM - INPUT GROUP */
+/* FORM - INPUT GROUP - USED for submission button on email */
 .input-group .input-group-btn .btn {
 	margin: 0;
 	box-shadow: none;
 	text-transform: uppercase;
 	font-size: 14px;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
 	/*
 	padding-top: 8px;
@@ -868,7 +930,7 @@ fieldset[disabled] .form-control {
 }
 
 .input-group .input-group-btn .btn:hover {
-	background: #1abc9c;
+	background: #0088a0; /*color - dzr-brand-hover */
 	color: #fff;
 }
 
@@ -906,7 +968,6 @@ fieldset[disabled] .form-control {
 	border-color: inherit !important;
 }
 .panel-title {
-	/*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
     font-size: 15px;
     font-weight: 700;
 	text-transform: uppercase;
@@ -1035,7 +1096,6 @@ fieldset[disabled] .form-control {
 /*===================================================================================*/
 
 .pagination li a {
-	/*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
 	font-size: 14px;
 	color: #16A085;
 	background: none;
@@ -1092,7 +1152,6 @@ fieldset[disabled] .form-control {
 	border: 1px solid #16A085;
 	border-radius: 0;
 	color: #16A085;
-	/*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
 	font-size: 14px;
 	min-width: 160px;
 }
@@ -1127,14 +1186,14 @@ fieldset[disabled] .form-control {
 /*  (spacing, padding, etc)
 /*===================================================================================*/
 
-.content-block {
+.content-block-cycle {
 	width: 100%;
-	padding: 30px 0 30px 0;
+	padding: 60px 0 60px 0;
 	margin-left: 0px;
 	margin-right: 0px;
 	z-index: 100;
 	position: relative;
-	background-color: #ffffff;
+	background-color: #ebb600; /*color - dzr-yellow */
 }
 
 .content-block-nopad {
@@ -1143,18 +1202,23 @@ fieldset[disabled] .form-control {
 	margin-right: 0px;
 	z-index: 100;
 	position: relative;
-	background-color: #ffffff;
+	background-color: #ffffff; /*color - dzr-light?? */
 }
 
 .content-left {
 	/*Note: see media queries at bottom - XS size has different padding*/
-	padding: 60px 15px 60px 35px;
+	padding: 120px 15px 120px 35px;
 }
 
 .content-right {
 	/*Note: see media queries at bottom - XS size has different padding*/
-	padding: 60px 35px 60px 15px;
+	padding: 120px 35px 120px 15px;
 	float: right;
+}
+
+.content-middle {
+	padding: 120px 35px 120px 35px;
+	text-align: center;
 }
 
 .scenario-carousel {
@@ -1175,10 +1239,13 @@ fieldset[disabled] .form-control {
   margin-left: auto;
 }
 
-/*TODO: make sure this isn't overriding rows that need the margins and if so, make specific to cycle-1 & 2*/
 .container-fluid-nopad .row{
 	margin-right: 0px;
 	margin-left: 0px;
+}
+
+.content-border{
+	border-bottom: #FFE385 1px solid; /*color - dzr-yellow - 30% whiter*/
 }
 
 
@@ -1188,6 +1255,34 @@ fieldset[disabled] .form-control {
 
 /*Extra Small Devices */
 @media only screen and (max-width: 767px) {
+	/*TYPOGRAPHY-FONT SIZE CHANGES */
+	h1, .h1 { font-size: 36px; }
+	h2, .h2 { font-size: 24px; }
+	h3, .h3 { font-size: 18px; }
+	h4, .h4 { font-size: 18px; }
+	h5, .h5 { font-size: 16px; }
+	h6, .h6 { font-size: 14px; }
+	.lead {
+		font-size: 16px;
+	}
+	.cycle-item {
+		font-family: "proxima-nova-alt-condensed-n4", "proxima-nova-alt-condensed", sans-serif;
+		font-size: 21px;
+		font-weight: 400;
+	}
+	.font-icon span{
+		font-size: 20px;
+	}
+	.form-group {
+		font-size: 14px;
+	}
+	label, .label {
+		font-size: 24px;
+	}
+	
+	
+	/*CONTENT-BLOCK SPACING CHANGES */
+	
 	.text-center-xs {
 	  text-align: center;
 	}
@@ -1206,18 +1301,24 @@ fieldset[disabled] .form-control {
 		min-height: 400px;
 	}
 	
-	.screenshot-container{
+	.screenshot-container,
+	.screenshot-container-right {
 		position: static;
-		max-height: 400px;
+		height: 400px;
+		padding: 0px 35px 40px;
 	}
-	.screenshot-container .img-screenshot-holder {
+	.screenshot-container .img-screenshot-holder,
+	.screenshot-container-right .img-screenshot-holder {
 		display: block;
 	    max-width: 100%;
-	    max-height: 360px;
+	    max-height: 100%;
 	    width: auto;
 	    height: auto;
 	}
 	
+	.content-block-cycle {
+		padding: 30px 0 30px 0;
+	}
 	
 	.content-left {
 		padding: 60px 35px 60px 35px;
@@ -1226,6 +1327,11 @@ fieldset[disabled] .form-control {
 	.content-right {
 		padding: 60px 35px 60px 35px;
 		float: left;
+	}
+	
+	.content-middle {
+		padding: 60px 35px 60px 35px;
+		text-align: left;
 	}
 }
 
