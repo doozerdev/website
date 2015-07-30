@@ -31,8 +31,8 @@ redirect.use(function(req, res){
 
 var app = module.exports = express();
 
-app.use(vhost('www.doozer.tips', main)); // Serves all subdomains via Redirect app
-//app.use(vhost('doozer.tips', main)); // Serves top level domain via Main server app
+app.use(vhost('www.doozer.tips', main)); 
+app.use(vhost('doozer.tips', main)); 
 
 /* istanbul ignore next */
 if (!module.parent) {
