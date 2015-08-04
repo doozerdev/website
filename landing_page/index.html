@@ -7,35 +7,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Doozer | The to-do list with the tips you need to be a hero</title>
+    <title>Doozer | The to-do list with tips from the experts</title>
     <meta name="keywords" content="tasks, to-do list, to-do, experts, Doozer, Doozer to-do list, Doozer experts, Doozer list, Doozer tips">
-	<meta name="description" content="The to-do list with tips from the experts.">
+	<meta name="description" content="The to-do list with tips from the experts">
     
-    <link rel="shortcut icon" href="img/favicon.png">
-	<!-- TODO: turn the above into an .ico with 16x16, 32x32, 48x48... AND add:
-		<link rel="icon" type="image/png" href="/path/to/icons/favicon-192x192.png" sizes="192x192">
-		<link rel="apple-touch-icon" sizes="180x180" href="/path/to/icons/apple-touch-icon-180x180.png">
-	-->
+    <!-- FAVICONS -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#0acbea">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#0acbea">
+    
     
     <!-- TODO: fill in FB & Twitter properties-->
     <!-- Facebook -->    
     <meta property="og:site_name" content="Doozer">
     <meta property="og:title" content="The tips you need to be a hero">
-    <meta property="og:description" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+    <meta property="og:description" content="The to-do list with tips from the experts">
+    <meta property="og:url" content="http://doozer.tips">
+    <meta property="og:image" content="http://doozer.tips/img/iTunesArtwork@2x.png">
     <meta property="og:type" content="website">
+    <!-- TODO: add facebook app id: fb:app_id -->
     
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Doozer - The tips you need to be a hero">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image:src" content="">
-    <meta name="twitter:domain" content="">
-    <meta name="twitter:app:name:iphone" content="Doozer">
-    <meta name="twitter:app:id:iphone" content="">
-    <meta name="twitter:app:name:ipad" content="Doozer">
-    <meta name="twitter:app:id:ipad" content="">
+    <meta name="twitter:description" content="The to-do list with tips from the experts">
+    <meta name="twitter:image" content="http://doozer.tips/img/iTunesArtwork@2x.png">
+    <meta name="twitter:site" content="http://doozer.tips">
+    <!-- TODO add app info for twitter download:
+        <meta name="twitter:card" content="app">
+        <meta name="twitter:site" content="@TwitterDev"> NEED TWITTER:SITE to be @ to work??
+        <meta name="twitter:app:name:iphone" content="">
+        <meta name="twitter:app:id:iphone" content="">
+        <meta name="twitter:app:name:ipad" content="">
+        <meta name="twitter:app:id:ipad" content="">
+    -->    
 
 
     <!-- Bootstrap Core CSS and plugins -->
@@ -84,18 +104,15 @@
 		  
 		<div class="container-fluid container-fluid-nopad">
 			<div class="row">
-				<div class="col-sm-1 col-sm-offset-1 brand clearfix">
-                    <img src="img/favicon.png" class="pull-right-sm center-block-xs img-responsive">
-                </div>
-                <div class="col-sm-3 brand-sm clearfix">
-					<h1 class="pull-left-sm text-center-xs dzrname">DOOZER</h1>
+				<div class="col-sm-5 col-sm-offset-1 brand">
+                    <img src="img/FullLogo-70.png" class="center-block-xs img-responsive">
                 </div>
                 <div class="col-xs-12 text-center-xs col-sm-11 col-sm-offset-1">
-					<h1 class="tagline">The tips you need to be a hero</h1>
+					<h2 class="tagline">The tips you need to be a hero</h2>
 				</div>
 		 	</div><!-- /.row -->
             <div class="row">
-                <form id="subscribe-hero" class="col-xs-10 col-xs-offset-1 text-center-xs col-sm-6 col-sm-offset-1 col-md-5 col-lg-5" action="https://doozer.createsend.com/t/i/s/tjirdy/" method="post">
+                <form id="subscribe-hero" class="subscribe-form col-xs-10 col-xs-offset-1 text-center-xs col-sm-6 col-sm-offset-1 col-md-5 col-lg-5" action="https://doozer.createsend.com/t/i/s/tjirdy/" method="post">
                     <div class="form-group">
                         <label class="label" for="emailtop">Get updates on our launch:</label>
                     	<div class="input-group">
@@ -124,7 +141,7 @@
                 <p class="lead">Rescue your time from researching life's nitty-gritty tasks. Focus your energy on family and friends, creating your passion project, and everything else that makes you happy.</p>
             </div>
             <div class="col-xs-12 col-sm-6 screenshot-container-right">
-                <img class="img-screenshot-holder" src="img/doozer_complete.png" alt="Image of completing tasks in Doozer app" />
+                <img class="img-screenshot-holder" src="img/HomeScreen-ManyLists.png" alt="Image of multiple lists in Doozer app" />
             </div>
         </div>
     </section><!-- /.content-block -->
@@ -172,7 +189,7 @@
                 <p class="lead">There's the plumber who will fix your leak, the perfect gift for an upcoming wedding, and the instructions to build your own vegetable garden&mdash;right there in your to-do list.</p>
             </div>
             <div class="col-xs-12 col-sm-6 screenshot-container pull-left clearfix">
-                <img class="img-screenshot-holder" src="img/HomeScreen-ManyLists1.png" alt="Image of multiple lists in Doozer app" />
+                <img class="img-screenshot-holder" src="img/doozer_complete.png" alt="Image of completing tasks in Doozer app" />
             </div>
         </div>
     </section><!-- /.content-block -->
@@ -203,7 +220,7 @@
                 </div><!-- /.row -->
             </div>
             <div class="col-xs-12 col-sm-6 screenshot-container-right">
-                <img class="img-screenshot-holder" src="img/HomeScreen-ManyLists.png" alt="Image of lists in Doozer app" />
+                <img class="img-screenshot-holder" src="img/WithSolutions,TaskCollapsed@3x.png" alt="Image of solutions from Doozer art experts on task to buy painting supplies" />
             </div>
         </div>
     </section><!-- /.content-block -->
@@ -226,7 +243,7 @@
     <div class="container-fluid">
         <!-- Start Footer 1-4 (bskit)-->
         <div class="row footer-1-4">
-    		<form id="subscribe-footer" class="footer-form col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3" action="https://doozer.createsend.com/t/i/s/tjirdy/" method="post">
+    		<form id="subscribe-footer" class="subscribe-form footer-form col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3" action="https://doozer.createsend.com/t/i/s/tjirdy/" method="post">
                 <div class="form-group">
                     <label class="label" for="emailbottom">Get updates on our launch:</label>
                 	<div class="input-group">
@@ -239,7 +256,7 @@
                 </div><!-- /.form-group -->
             </form>
             <div class="col-xs-12">
-                <img src="img/favicon.png" class="center-block img-responsive">
+                <img src="img/SquareLogo-130.png" class="center-block img-responsive" />
             </div>
             <ul class="social social-light col-xs-12">
     			<li><a href="mailto:info@doozer.tips"><i class="fa fa-2x fa-envelope"></i></a></li>
@@ -254,7 +271,7 @@
                 <!--TODO: add back terms & privacy links:    &sdot;   <a href="#">Terms</a>   &sdot;   <a href="#">Privacy</a> -->
             </div>
             <div class="col-xs-7 clearfix">
-    			<p class="pull-right"><a href="mailto:info@doozer.tips">Contact us</a>   &sdot;   Made with <span class="fa fa-heart dzr-purple"></span> in Seattle</p>
+    			<p class="pull-right" align="right"><a href="mailto:info@doozer.tips">Contact us</a>   &sdot;   Made with <span class="fa fa-heart dzr-purple"></span> in Seattle</p>
             </div>
         </div><!-- /.row --><!--// END Footer Copyright Bar -->
     </div><!-- /.container-fluid -->
