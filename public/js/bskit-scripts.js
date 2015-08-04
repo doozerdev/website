@@ -14,7 +14,6 @@ $(document).ready(function() {
 	    autoPlay : 8000,
 		stopOnHover: true,		
 	});
-	console.log("done config carousel");
 });
 
 // End Owl Carousel

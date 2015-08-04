@@ -13,13 +13,12 @@ Version: 1.0
 
 #header-3 {
     width: 100%;
-	background-color: #233447; /*color - dzr-?? backup */
+	background-color: #003340; /*color - dzr-dark for backup */
 }
 
 #header-3 .brand {
 	margin-top: 200px;
 	margin-bottom: 0px;
-	padding: 0px 0px 0px 15px;
 }
 
 
@@ -33,44 +32,45 @@ Version: 1.0
 	height: auto;
 }
 
-#header-3 .hero .dzrname {
-	color: #e5f6f9; /*color - dzr-lighttext */
-	font-family: "futura-pt", sans-serif;
-	font-weight: 800;
-}
-
 #header-3 .hero .tagline {
-	margin-top: 20px;
-	margin-bottom: 60px;
-	color: #e5f6f9; /*color - dzr-lighttext */
+	margin-top: 10px;
+	margin-bottom: 40px;
+	color: #e6f9fc; /*color - dzr-lighttext */
 	
 	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
+	font-size: 36px;
 } 
 
 #header-3 .hero .label {
 	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
-	color: #e5f6f9; /*color - dzr-lighttext */
+	font-size: 24px;
+	color: #e6f9fc; /*color - dzr-lighttext */
 	white-space: nowrap;
 }
 
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
-	#header-3 .hero .label {
-		white-space: normal;
-	}  
+	#header-3 .brand {
+		margin-top: 170px;
+	}
 	
-  
+	#header-3 .hero .tagline {
+		font-size: 25px;
+		margin-top: 5px;
+		margin-bottom: 30px;
+	}
+	
+	#header-3 .hero .label {
+		font-size: 18px;
+		white-space: normal;
+	}    
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
- 	#header-3 .brand-sm {
-	 	margin-top: 200px;
-		margin-bottom: 0px;
-		padding: 0px 0px 0px 15px;
-	}
+
 	
   
 }
@@ -79,6 +79,15 @@ Version: 1.0
   
 	
 	  
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1200px) {
+	#header-3 .brand {
+		margin-top: 260px;
+	}
+	
+	
 }
 
 
