@@ -172,6 +172,7 @@ h4, h5, h6 {
 	margin-top: 10px;
 } 
 
+
 h1, .h1 { font-size: 44px; }
 h2, .h2 { font-size: 36px; }
 h3, .h3 { font-size: 24px; }
@@ -1264,8 +1265,13 @@ fieldset[disabled] .form-control {
 }
 
 .legal{
-	margin-top: 60px;
+	margin-top: 25px;
 	margin-bottom: 60px;
+}
+
+.logo-nav {
+	margin-bottom: 50px;
+	max-height: 30px;
 }
 
 
