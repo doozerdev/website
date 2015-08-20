@@ -21,6 +21,13 @@ Version: 1.0
 	margin-bottom: 0px;
 }
 
+#header-3 .brand-expert {
+	margin-top: 0px;
+	margin-bottom: 200px;
+}
+#header-3 .brand-expert img{
+	max-height: 30px;
+}
 
 #header-3 .hero {
 	background: url('../img/sparkler_unsplash.jpg') no-repeat center top;
@@ -32,7 +39,13 @@ Version: 1.0
 	height: auto;
 }
 
-#header-3 .hero .tagline {
+#header-3 .hero-expert {
+	background-color: #003340; /*color- dzr-dark */
+	padding: 10px 0 50px 0;
+	height: auto;
+}
+
+#header-3 .tagline {
 	margin-top: 10px;
 	margin-bottom: 40px;
 	color: #e6f9fc; /*color - dzr-lighttext */
@@ -41,8 +54,17 @@ Version: 1.0
 	font-weight: 400;
 	font-size: 36px;
 } 
+#header-3 .tagline-sm {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	color: #e6f9fc; /*color - dzr-lighttext */
+	
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+} 
 
-#header-3 .hero .label {
+#header-3 .label {
 	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
 	font-size: 24px;
@@ -56,14 +78,22 @@ Version: 1.0
 	#header-3 .brand {
 		margin-top: 170px;
 	}
+	#header-3 .brand-expert {
+		margin-bottom: 75px;
+	}
 	
-	#header-3 .hero .tagline {
+	#header-3 .tagline {
 		font-size: 25px;
 		margin-top: 5px;
 		margin-bottom: 30px;
 	}
+	#header-3 .tagline-sm {
+		font-size: 21px;
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
 	
-	#header-3 .hero .label {
+	#header-3 .label {
 		font-size: 18px;
 		white-space: normal;
 	}    

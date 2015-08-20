@@ -60,6 +60,7 @@ body {
 /* COLORS */
 
 .dzr-brand {color: #0acbea;}
+.dzr-brand-shadow {color: #006E80;}
 .dzr-brand-hover {color: #EBB600;}
 .dzr-lighttext {color: #e6f9fc;}
 .dzr-darktext {color: #003340;}
@@ -133,7 +134,6 @@ body {
 
 /** TYPOGRAPHY **/
 
-*,
 body {
 	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
@@ -189,6 +189,11 @@ p {
 	font-size: 14px;
 	margin: 15px 0;
 	color: #003340; /*color - dzr-darktext */
+}
+
+.title-above{
+	margin-top: 35px;
+	margin-bottom: 35px;
 }
 
 .lead {
@@ -259,6 +264,11 @@ a:hover {
 	transition: all 0.3s ease;
 }
 
+/*bootstrap class used in popup, X button; body formatting overrides bootstrip, this reverts it */
+.modal .modal-header .close {
+    font-size: 30px;
+    /*font-weight: 700;*/
+}
 /*===================================================================================*/
 /*	LISTS
 /*===================================================================================*/
@@ -347,6 +357,11 @@ img.media-object.img-responsive {
 	height: 100%;
 	min-height: 600px;
 }
+.screenshot-container-short {
+	/*don't use this on its own - it's meant to override on top of .screenshot-container-right*/
+	padding: 120px 35px;
+	min-height: 500px;
+}
 
 .screenshot-container-tall{
 	padding: 60px 35px;
@@ -354,9 +369,20 @@ img.media-object.img-responsive {
 	height: 800px;
 }
 
+.screenshot-container-hero{
+	padding: 50px 0px 0px;
+	position: absolute;
+	top: 0px;
+    right: 0px;
+    bottom: 0px;
+	display: block;
+	height: 100%;
+}
+
 .screenshot-container .img-screenshot-holder,
 .screenshot-container-right .img-screenshot-holder,
 .screenshot-container-tall .img-screenshot-holder, 
+.screenshot-container-hero .img-screenshot-holder, 
 .img-screenshot-holder {
 	max-height: 100%;
 	max-width: 100%;
@@ -368,6 +394,10 @@ img.media-object.img-responsive {
 	margin-left: auto;
 }
 
+.screenshot-container-short .img-screenshot-holder {
+	/*TODO: fix this proper vertical aligment (this doesn't work) - images have fixed padding to center them for now*/
+	vertical-align: middle;
+}
 
 
 /*===================================================================================*/
@@ -434,7 +464,8 @@ p .btn {
 /* Button PRIMARY */
 .btn.btn-primary {
 	background: #0acbea; /*color - dzr-brand */
-	box-shadow: 0 2px #EBB600; /*color - dzr-brand-hover */
+	box-shadow: 0 2px #006E80; /*color - dzr-brand-shadow */ 
+
 }
 
 .btn.btn-primary:hover {
@@ -717,7 +748,7 @@ fieldset legend {
 }
 
 .form-control {
-	border: 2px solid #ecf0f1;
+	border: 2px solid #e6f9fc; /*color - dzr-light */
 	color: #003340; /*color - dzr-darktext */
 	padding: 8px 12px;
 	height: 40px;
@@ -727,6 +758,9 @@ fieldset legend {
 	box-shadow: none;
 	-webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
 	transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+.form-control.form-dark {
+	border: 2px solid #95A5A6; /*color - dzr-???*/
 }
 
 .form-group {
@@ -1201,6 +1235,14 @@ fieldset[disabled] .form-control {
 /*	CONTENT BLOCK HOLDERS 
 /*  (spacing, padding, etc)
 /*===================================================================================*/
+.content-block {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	z-index: 100;
+	position: relative;
+}
+
 
 .content-block-cycle {
 	width: 100%;
@@ -1331,8 +1373,17 @@ fieldset[disabled] .form-control {
 	.screenshot-container-right {
 		position: static;
 		height: 500px;
-		padding: 0px 35px 40px;
+		padding: 0px 35px 60px;
 	}
+	.screenshot-container-hero {
+		position: static;
+		height: 500px;
+		padding: 50px 35px 0px;
+	}
+	.screenshot-container-short {
+		height: 325px;
+	}
+	
 	.screenshot-container .img-screenshot-holder,
 	.screenshot-container-right .img-screenshot-holder {
 		display: block;
