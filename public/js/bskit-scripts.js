@@ -2,6 +2,25 @@
 /*	Javascript code for all elements
 /*----------------------------------------------------*/
 
+/* -------- NavBar Scrolling change -------- */
+// old option: var mainbottom = $('#header-3').offset().top + $('#header-3').height();
+var mainbottom = $('#header-3').height();
+
+function switchNavBar(){
+    //round here to reduce a little workload
+    var stop = Math.round($(window).scrollTop());
+	
+    if (stop > mainbottom - 20) {
+        $('#navdzr').addClass('navbar-dzr-solid');
+    } else {
+        $('#navdzr').removeClass('navbar-dzr-solid');
+    }
+};
+
+
+$(window).scroll(switchNavBar);
+	
+
  
 
 /* -------- Owl Carousel -------- */

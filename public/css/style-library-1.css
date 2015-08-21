@@ -252,7 +252,7 @@ em { color: #0acbea; } /*color - dzr-brand */
 /* LINKS */
 
 a { 
-	color: #0acbea; /*color - dzr- brand */ 
+	color: #0acbea; /*color - dzr-brand */ 
 }
 
 a:hover {
@@ -264,16 +264,80 @@ a:hover {
 	transition: all 0.3s ease;
 }
 
-/*bootstrap class used in popup, X button; body formatting overrides bootstrip, this reverts it */
+/*bootstrap class used in popup, X button; body formatting overrides bootstrap, this reverts it */
 .modal .modal-header .close {
     font-size: 30px;
     /*font-weight: 700;*/
 }
+
+
+/*===================================================================================*/
+/*	NAVBAR
+/*===================================================================================*/
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.navbar-dzr {
+  background-color:rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.2);
+  transition: all 0.5s ease;
+}
+.expert-page {
+  background-color:rgba(0,102,128,0.5);
+  border-color: rgba(0,102,128,0.5);
+}
+
+.navbar-dzr-solid {
+	background-color: #006680; /*color - dzr-brand-shadow */
+  	border-color: #006680; /*color - dzr-brand-shadow */
+	transition: all 0.5s ease;
+}
+
+.navbar-dzr .navbar-brand {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.navbar-dzr .navbar-brand img {
+	max-height: 100%;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+.navbar-dzr .navbar-nav > li > a {
+  color: #e6f9fc; /*color - dzr-lighttext*/
+}
+.navbar-dzr .navbar-nav > li > a:hover,
+.navbar-dzr .navbar-nav > li > a:focus {
+  color: #0acbea; /*color - dzr-brand */ 
+  background-color: transparent;
+}
+
+.navbar-dzr .navbar-toggle {
+  border-color: #e6f9fc; /*color - dzr-lighttext*/
+  background-color: transparent;
+}
+.navbar-dzr .navbar-toggle:hover,
+.navbar-dzr .navbar-toggle:focus {
+  background-color: #e6f9fc; /*color - dzr-lighttext*/
+}
+.navbar-dzr .navbar-toggle .icon-bar {
+  background-color: #0acbea; /*color - dzr-brand */ 
+}
+.navbar-dzr .navbar-collapse,
+.navbar-dzr .navbar-form {
+  border-color: #0acbea; /*color - dzr-brand */ 
+}
+
+
+
 /*===================================================================================*/
 /*	LISTS
 /*===================================================================================*/
 /*color - dzr-? TODO if these get used... currently not used */
-
+/*
 ol {
 	position: relative;
 	padding-left: 22px;
@@ -301,7 +365,7 @@ ul.circle li:before {
 	margin-left: -20px;
 	position: absolute;
 }
-
+*/
 
 
 /*===================================================================================*/
@@ -370,7 +434,7 @@ img.media-object.img-responsive {
 }
 
 .screenshot-container-hero{
-	padding: 50px 0px 0px;
+	padding: 70px 0px 0px;
 	position: absolute;
 	top: 0px;
     right: 0px;
