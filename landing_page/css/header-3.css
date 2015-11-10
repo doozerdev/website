@@ -34,8 +34,18 @@ Version: 1.0
 
 #header-3 .hero-expert {
 	background-color: #003340; /*color- dzr-dark */
-	padding: 260px 0 50px 0;
+	padding: 350px 0 50px 0;
 	height: auto;
+}
+
+#header-3 .hero-landing {
+	background-color: #003340; /*color- dzr-dark */
+	padding: 250px 0 50px 0;
+	height: 100vh;
+    /*height: -moz-calc(100%);
+    height: -webkit-calc(100%);
+    height: calc(100%);
+	*/
 }
 
 #header-3 .tagline {
@@ -98,6 +108,15 @@ Version: 1.0
 	
   
 }
+
+/* X-SMALL AND SMALL Devices, Tablets */
+@media only screen and (max-width: 991px) {
+	#header-3 .hero-landing {
+		padding-top: 115px;
+		height: auto;
+	}
+}
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   

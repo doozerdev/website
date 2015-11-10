@@ -434,7 +434,7 @@ img.media-object.img-responsive {
 }
 
 .screenshot-container-hero{
-	padding: 70px 0px 0px;
+	padding: 70px 10px 0px 0px;
 	position: absolute;
 	top: 0px;
     right: 0px;
@@ -474,7 +474,7 @@ img.media-object.img-responsive {
     padding: 10px 20px;
 	margin: 15px 0;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
 	letter-spacing: 0.1em;
     text-shadow: none;
     border: none;
@@ -592,7 +592,7 @@ p .btn {
 	color: #FFF;
     padding: 12px 20px;
 	margin: 15px 0;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 14px;
     text-align: center;
 	letter-spacing: 0.1em;
@@ -1037,7 +1037,7 @@ fieldset[disabled] .form-control {
 	text-transform: uppercase;
 	font-size: 14px;
 	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
-	font-weight: 400;
+	font-weight: 700;
 	/*
 	padding-top: 8px;
 	padding-bottom: 8px;*/ 
@@ -1439,11 +1439,7 @@ fieldset[disabled] .form-control {
 		height: 500px;
 		padding: 0px 35px 60px;
 	}
-	.screenshot-container-hero {
-		position: static;
-		height: 500px;
-		padding: 50px 35px 0px;
-	}
+
 	.screenshot-container-short {
 		height: 325px;
 	}
@@ -1491,24 +1487,40 @@ fieldset[disabled] .form-control {
 
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width: 768px) {
 	.pull-right-sm {
 	  float: right;
 	}
 	.pull-left-sm {
 	  float: left;
-	}	
+	}
+
+	.text-center-sm {
+	  text-align: center;
+	}
+}
+
+/* X-SMALL AND SMALL Devices, Tablets */
+@media only screen and (max-width: 991px) {
+
+	.screenshot-container-hero {
+		position: static;
+		height: 750px;
+		padding: 50px 35px 0px;
+	}
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-	
+@media only screen and (min-width: 992px) {
+	.text-center-sm {
+	  text-align: left;
+	}
 	
 	
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width: 1200px) {
 	
 	
 	
