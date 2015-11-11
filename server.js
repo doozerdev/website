@@ -5,7 +5,10 @@ var vhost = require('vhost');
 // Main server app
 
 var main = express();
-main.use(express.static(__dirname + '/public'));
+//main.use(express.static(__dirname + '/public'));
+main.use(express.static(__dirname + '/public', {
+  extensions: ['html']
+}));
 
 /*
 if (!module.parent) main.use(logger('dev'));
