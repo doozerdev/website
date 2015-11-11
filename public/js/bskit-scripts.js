@@ -1,4 +1,3 @@
-/// <reference path="../typings/jquery/jquery.d.ts"/>
 /*	Javascript code for all elements
 /*----------------------------------------------------*/
 
@@ -20,7 +19,22 @@ function switchNavBar(){
 
 $(window).scroll(switchNavBar);
 	
+/* -------- Modal & Form Events ---------*/
+$('#ExpertModal').on('show.bs.modal', function (e) {
+	if (e.relatedTarget.id == 'signupbutton') {
+		console.log("modal triggered by button");
+		ga('send', 'event', 'SignUp', 'openexpertform', 'dialogbutton');
+	} else if (e.relatedTarget.id == 'signuplink') {
+		console.log("modal triggered by link");
+		ga('send', 'event', 'SignUp', 'openexpertform', 'dialoglink');
+	}
+});
 
+
+var submitSignUp = function (usertype, location) {
+	ga('send', 'event', 'SignUp', usertype, location);
+	return true;	
+};
  
 
 /* -------- Owl Carousel -------- */

@@ -97,6 +97,41 @@
 </head>
 
 <body>
+    <!--Sign-up Modal -->
+    <div class="container-fluid container-fluid-nopad"> 
+        <div class="modal fade" id="ExpertModal" tabindex="-1" role="dialog" aria-labelledby="Expert sign-up dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Want to share your knowledge with the Doozer community?</h4>
+                        <h5>Fantastic! We'll be in touch about joining the Doozer beta.</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form id="subscribe-hero" class="subscribe-form" onsubmit="return submitSignUp('expert', 'dialogform')" action="https://doozer.createsend.com/t/i/s/tjirdy/" method="post">
+                            <div class="form-group">
+                                <label class="sr-only" for="nametop">Name</label>
+                                <input type="text" class="form-control form-dark" id="nametop" placeholder="Name" name="cm-name" type="text" required/>
+                            </div><!-- /.form-group -->
+                            <div class="form-group">
+                                <label class="sr-only" for="emailtop">Email</label>
+                                <input type="email" class="form-control form-dark" id="emailtop" placeholder="you@email.com" name="cm-tjirdy-tjirdy" required />
+                            </div><!-- /.form-group -->
+                            <div class="form-group">
+                                <label class="sr-only" for="areastop">Areas of Expertise</label>
+                                <input type="text" class="form-control form-dark" id="areastop" placeholder="Areas of expertise" name="cm-f-jkgjt"/>
+                            </div><!-- /.form-group -->
+                            <button class="btn btn-primary" type="submit">Join</button>
+                            <input type="hidden" id="fieldjtlikl" name="cm-fo-jtlikl" value="366409" /><!-- Subscribe_source: value="Experts-top" in Campaign Monitor -->
+                            <input type="hidden" id="fieldjkgji" name="cm-fo-jkgji" value="366406" /><!-- Expert: value="Expert-Interest" in Campaign Monitor -->
+                        </form>
+                    </div><!-- /.modal-body -->
+                </div><!-- /.modal-content-->
+            </div><!-- /.modal-dialog-->
+        </div><!-- /.modal-->
+    </div>
+
+    <!-- Nav Bar -->
     <nav id="navdzr" class="navbar navbar-dzr expert-page navbar-fixed-top">
         <div class="container-fluid">
             <!-- Bootstrap navbar: Brand and toggle get grouped for better mobile display -->
@@ -114,7 +149,7 @@
             <div class="collapse navbar-collapse" id="dzr-navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.html#content-1">About Doozer</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#ExpertModal">Share your knowledge</a></li>
+                <li><a id="signuplink" href="#" data-toggle="modal" data-target="#ExpertModal">Share your knowledge</a></li>
             </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -134,7 +169,7 @@
                     </div>
                     <!-- Button trigger modal -->
                     <div class="col-xs-12 text-center-xs col-md-11 col-md-offset-1 pad-none">
-                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ExpertModal">Get early access</button>
+                        <button id="signupbutton" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ExpertModal">Get early access</button>
                     </div>
                 </div><!-- /.row -->
             </div>
@@ -146,40 +181,6 @@
 	  </section>
     </header>
     <!--// END HEADER -->
-
-    <!-- Modal -->
-<div class="container-fluid container-fluid-nopad"> 
-    <div class="modal fade" id="ExpertModal" tabindex="-1" role="dialog" aria-labelledby="Expert sign-up dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Want to share your knowledge with the Doozer community?</h4>
-                    <h5>Fantastic! We'll be in touch about joining the Doozer beta.</h5>
-                </div>
-                <div class="modal-body">
-                    <form id="subscribe-hero" class="subscribe-form" action="https://doozer.createsend.com/t/i/s/tjirdy/" method="post">
-                        <div class="form-group">
-                            <label class="sr-only" for="nametop">Name</label>
-                            <input type="text" class="form-control form-dark" id="nametop" placeholder="Name" name="cm-name" type="text" required/>
-                        </div><!-- /.form-group -->
-                        <div class="form-group">
-                            <label class="sr-only" for="emailtop">Email</label>
-                            <input type="email" class="form-control form-dark" id="emailtop" placeholder="you@email.com" name="cm-tjirdy-tjirdy" required />
-                        </div><!-- /.form-group -->
-                        <div class="form-group">
-                            <label class="sr-only" for="areastop">Areas of Expertise</label>
-                            <input type="text" class="form-control form-dark" id="areastop" placeholder="Areas of expertise" name="cm-f-jkgjt"/>
-                        </div><!-- /.form-group -->
-                        <button class="btn btn-primary" type="submit">Join</button>
-                        <input type="hidden" id="fieldjtlikl" name="cm-fo-jtlikl" value="366409" /><!-- value="Experts-top" in Campaign Monitor -->
-                        <input type="hidden" id="fieldjkgji" name="cm-fo-jkgji" value="366406" /><!-- value="Expert-Interest" in Campaign Monitor -->
-                    </form>
-                </div><!-- /.modal-body -->
-            </div><!-- /.modal-content-->
-        </div><!-- /.modal-dialog-->
-    </div><!-- /.modal-->
-    </div>
 
     <!-- Page Content -->
     <div class="container-fluid container-fluid-nopad">
@@ -246,7 +247,7 @@
     <div class="container-fluid">
         <!-- Start Footer 1-4 (bskit)-->
         <div class="row footer-1-4">
-    		<form id="subscribe-footer" class="subscribe-form footer-form col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3" action="https://doozer.createsend.com/t/i/s/tjirdy/" method="post">
+    		<form id="subscribe-footer" class="subscribe-form footer-form col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3" onsubmit="return submitSignUp('expert', 'emailbottom')" action="https://doozer.createsend.com/t/i/s/tjirdy/" method="post">
                 <div class="form-group">
                     <label class="label" for="emailbottom">Get early access to Doozer:</label>
                 	<div class="input-group">
@@ -255,7 +256,7 @@
                 			<button class="btn btn-primary" type="submit">join the beta</button>
                 		</span>
                 	</div>
-                    <input type="hidden" id="fieldjtlikl" name="cm-fo-jtlikl" value="366405" /><!-- value="experts-footer" in Campaign Monitor -->
+                    <input type="hidden" id="fieldjtlikl" name="cm-fo-jtlikl" value="366405" /><!--Subscribe_source: value="experts-footer" in Campaign Monitor -->
                 </div><!-- /.form-group -->
             </form>
             <div class="col-xs-12">
