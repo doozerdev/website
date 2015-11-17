@@ -75,6 +75,19 @@ Version: 1.0
 	white-space: nowrap;
 }
 
+a, .morelink { 
+	color: #e6f9fc; /*color - dzr-lighttext */ 
+}
+
+a:hover, .morelink:hover {
+	color: #EBB600; /*color - dzr-brand-hover */
+	text-decoration: none;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
